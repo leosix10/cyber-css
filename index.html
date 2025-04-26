@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <title>Cyber CSS - Bibliothèque de composants UI dans un style Cyberpunk</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="cyber__logo" href="index.html" aria-label="Lien pour retourner en haut">
+            CyberCSS
+        </a>
+        <nav>
+            <input type="checkbox" class="header__toggle" name="menu__button__top" id="menu__button__top"
+                aria-label="Bouton menu">
+            <label for="menu__button__top" class="header__burger" aria-label="Bouton menu"></label>
+            <ul class="header__menu">
+                <li><a href="#buttons">Boutons</a></li>
+                <li><a href="#cards">Cartes</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#forms">Formulaires</a></li>
+                <li><a class="header__cta" href="https://github.com/leosix10/cyber-css" target="_blank">Télécharger</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="cyber__title">Bibliothèque Cyberpunk</h1>
+
+        <section class="cyber__component" id="buttons">
+            <h2 class="cyber__title">Boutons</h2>
+            <div id="primary">
+                <button class="btn btn__primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg>Bouton principal</button>
+                <button class="btn btn__primary">Bouton principal</button>
+            </div>
+            <div id="secondary">
+                <button class="btn btn__secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>Bouton secondaire</button>
+                <button class="btn btn__secondary">Bouton secondaire</button>
+            </div>
+            <div id="outline">
+                <button class="btn btn__outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z" />
+                    </svg>Bouton contour</button>
+                <button class="btn btn__outline">Bouton contour</button>
+            </div>
+            <div id="disabled">
+                <button class="btn" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                    </svg>Bouton désactivé</button>
+                <button class="btn" disabled>Bouton désactivé</button>
+            </div>
+
+        </section>
+
+        <section class="cyber__component" id="cards">
+            <h2 class="cyber__title">Cartes</h2>
+            <div class="card card__image">
+                <img src="assets/images/cyberpunk-2077-ville.webp" alt="image d'exemple style cyberpunk">
+                <div>
+                    <h3>Carte avec image</h3>
+                    <p>Découvrez le monde futuriste, mature et sombre de Cyberpunk 2077, un jeu de rôle narratif en
+                        monde ouvert.</p>
+                    <button class="btn btn__primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                        </svg>Acheter le jeu</button>
+                </div>
+            </div>
+            <div class="card card__text">
+
+                <h3>Carte sans image</h3>
+                <p>Découvrez le monde futuriste, mature et sombre de Cyberpunk 2077, un jeu de rôle narratif en monde
+                    ouvert développé par CD PROJEKT RED, les créateurs de la saga de jeux The Witcher.</p>
+                <button class="btn btn__primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>Acheter le jeu</button>
+
+            </div>
+        </section>
+        <section class="cyber__component" id="gallery">
+            <h2 class="cyber__title">Galerie (bonus)</h2>
+            <div class="gallery">
+                <figure class="gallery__image">
+                    <img src="assets/images/cyber1.webp" alt="Cyberpunk 1">
+                    <figcaption>
+                        Voitures volantes
+                    </figcaption>
+                </figure>
+                <figure class="gallery__image">
+                    <img src="assets/images/cyber2.webp" alt="Cyberpunk 2">
+                    <figcaption>
+                        Gratte-ciels
+                    </figcaption>
+                </figure>
+                <figure class="gallery__image">
+                    <img src="assets/images/cyber3.webp" alt="Cyberpunk 3">
+                    <figcaption>
+                        Vue d'en haut
+                    </figcaption>
+                </figure>
+                <figure class="gallery__image">
+                    <img src="assets/images/cyber4.webp" alt="Cyberpunk 4">
+                    <figcaption>
+                        Chat trop stylé
+                    </figcaption>
+                </figure>
+                <figure class="gallery__image">
+                    <img src="assets/images/cyber5.webp" alt="Cyberpunk 5">
+                    <figcaption>
+                        Voiture au coucher de soleil
+                    </figcaption>
+                </figure>
+                <figure class="gallery__image">
+                    <img src="assets/images/cyber6.webp" alt="Cyberpunk 6">
+                    <figcaption>
+                        K/DA
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="cyber__component" id="header">
+            <h2 class="cyber__title">Header</h2>
+            <header class="header">
+                <a class="cyber__logo" href="#" aria-label="Lien pour retourner en haut">
+                    LOGO
+                </a>
+                <nav>
+                    <input type="checkbox" class="header__toggle" name="menu__button" id="menu__button">
+                    <label for="menu__button" class="header__burger" aria-label="Bouton menu"></label>
+                    <ul class="header__menu">
+                        <li><a href="#buttons">Boutons</a></li>
+                        <li><a href="#cards">Cartes</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#header">Header</a></li>
+                        <li><a href="#forms">Formulaires</a></li>
+                        <li><a class="header__cta" href="https://github.com/leosix10/cyber-css" target="_blank">Télécharger</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section class="cyber__component" id="forms">
+            <h2 class="cyber__title">Formulaires</h2>
+            <form method="get" class="form newsletter">
+                <h3 class="cyber__title">Newsletter</h3>
+                <div class="newsletter">
+                    <label for="email">Entre ton adresse e-mail : </label>
+                    <input class="form__text" type="email" name="email" id="email" placeholder="john.doe@example.com"
+                        required >
+                </div>
+                <fieldset>
+                    <legend>As-tu plus de 13 ans ?</legend>
+                    <label><input class="form__radio" type="radio" name="radio" value="yes" ><span>Oui</span></label>
+                    <label><input class="form__radio" type="radio" name="radio" value="no" ><span>Non</span></label>
+                    <label><input class="form__checkbox" type="checkbox" name="checkbox" value="accept" ><span>En
+                            m'inscrivant à la newsletter, j'accepte de recevoir des offres spéciales.</span></label>
+                </fieldset>
+                <div class="newsletter">
+                    <button class="btn btn__secondary" type="submit">S'inscrire</button>
+                </div>
+            </form>
+
+            <form method="get" class="form comment">
+                <h3 class="cyber__title">Message</h3>
+                <div class="comment">
+                    <label for="subject">Choisis l'objet de ton message :</label>
+                    <select class="form__text" name="choices" id="subject">
+                        <option value="">--Please choose an option--</option>
+                        <option value="reclamation">Réclamation</option>
+                        <option value="renseignement">Renseignement</option>
+                        <option value="candidature">Candidature</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="comment">
+                    <label for="comment">Ecris ton message :</label>
+                    <textarea class="form__text" id="comment" name="comment"
+                        placeholder="Saisis du texte dans l'encadré..." rows="4" cols="30"></textarea>
+                </div>
+                <div class="comment">
+                    <button class="btn btn__secondary" type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        Travail universitaire : Bibliothèque Cyberpunk, réalisé en SCSS par <a href="https://leosix.fr/" target="_blank">Léo Six</a>, étudiant en M1 DGI - 2025
+    </footer>
+</body>
+
+</html>

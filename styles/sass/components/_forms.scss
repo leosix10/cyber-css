@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+/*#region forms*/
+
+.form {
+    max-width: 26rem;
+    width: 100%;
+    
+    &__text {
+        appearance: none;
+        background-color: $blue;
+        clip-path: $cyberpunk-shape;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        color: $white;
+        font-family: $font-text;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 30rem;
+        position: relative;
+        isolation: isolate;
+
+        &:focus {
+            outline: $cyan 0.18rem solid;
+            outline-offset: -0.18rem;
+        }
+
+        &::placeholder {
+            color: $dark;
+        }
+    }
+
+    &__radio {
+        @include check-style;
+        border-radius: 50%;
+    }
+
+    &__checkbox {
+        @include check-style;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 0.8rem 0;
+    
+        legend {
+            font-size: 1.1rem;
+        }
+    
+        label {
+            font-size: 1rem;
+            margin-bottom: 0;
+
+            span {
+                position: relative;
+                top: -0.2rem;
+            }
+        }
+    }
+
+    select {
+        background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em, $blue;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*#endregion*/

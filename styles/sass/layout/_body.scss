@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as *;
+
+/*#region body*/
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: $primary $black;
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: $font-text;
+    background-color: $black;
+    color: $white;
+}
+
+main {
+    padding: $spacing;
+}
+
+.cyber__component {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+    main {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 4rem 8rem;
+    }
+
+    .cyber__component {
+        gap: 2.5rem;
+    }
+}
+
+/*#endregion*/

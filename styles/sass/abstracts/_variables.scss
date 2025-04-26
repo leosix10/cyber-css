@@ -1,0 +1,23 @@
+$black: #02091a;
+$pink: #CE2CB0;
+$yellow: #f8ef02;
+$cyan: #00ffd2;
+$blue: #136377;
+$dark-blue: darken($blue, 20%);
+$white: #fefefe;
+$dark: #bbbbbb;
+$primary: $pink;
+$primary-hover: lighten($primary, 20%);
+$primary-active: darken($primary, 20%);
+$second: $yellow;
+$second-hover: lighten($second, 20%);
+$second-active: darken($second, 20%);
+$font-title: "BlenderProBook";
+$font-text: "BlenderProBook";
+$font-logo: "Cyberpunk";
+
+
+$spacing: 1rem;
+$border-width: 0.2rem;
+$edge-size: 1rem;
+$cyberpunk-shape: polygon($edge-size 0%, 100% 0, 100% calc(100% - $edge-size), calc(100% - $edge-size) 100%, 0 100%, 0% $edge-size);

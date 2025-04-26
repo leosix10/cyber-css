@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+@mixin check-style {
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 3px solid $blue;
+    margin-right: 0.8rem;
+    transition: all .2s;
+
+    &:checked {
+        border: 6px solid $cyan;
+    }
+}
+
+@mixin center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

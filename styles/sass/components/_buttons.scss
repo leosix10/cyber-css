@@ -1,0 +1,155 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+/*#region buttons*/
+
+.btn {
+    padding: 1rem 1.75rem;
+    cursor: pointer;
+    @include center-center;
+    gap: $spacing;
+    font-family: $font-text;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    font-size: 1.1rem;
+    margin: $spacing 0;
+    min-width: 8rem;
+    max-width: 16rem;
+    font-weight: bold;
+    clip-path: $cyberpunk-shape;
+    transition: all .3s;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        z-index: -1;
+    }
+
+    &:hover {
+        animation: glitch 0.3s infinite alternate;
+    }
+
+    @keyframes glitch {
+        0% {
+            transform: translate(0, 0);
+            background-color: transparent;
+        }
+
+        10% {
+            transform: translate(-5px, 0);
+            background-color: $primary;
+        }
+
+        20% {
+            transform: translate(5px, 0);
+            background-color: $cyan;
+        }
+
+        30% {
+            transform: translate(-5px, 0);
+            background-color: $blue;
+        }
+
+        50% {
+            transform: translate(0, 0);
+            background-color: transparent;
+        }
+    }
+
+    &__primary {
+        background-color: $primary;
+        color: $white;
+        fill: $white;
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+
+        &:active {
+            background-color: $primary-active;
+        }
+    }
+
+    &__secondary {
+        background-color: $second;
+
+        &:hover {
+            background-color: $second-hover;
+        }
+
+        &:active {
+            background-color: $second-active;
+        }
+    }
+
+    &__outline {
+        color: $cyan;
+        fill: $cyan;
+        background-color: $black;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: $cyan;
+            z-index: -2;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: $black;
+            z-index: -1;
+            transition: all .3s;
+            clip-path: polygon($border-width calc($edge-size + $border-width * 0.4142),
+                    calc($edge-size + $border-width * 0.4142) $border-width,
+                    calc(100% - $border-width) $border-width,
+                    calc(100% - $border-width) calc(100% - calc($edge-size + $border-width * 0.5)),
+                    calc(100% - calc($edge-size + $border-width * 0.4142)) calc(100% - $border-width),
+                    calc($border-width) calc(100% - $border-width));
+        }
+
+        &:hover {
+            color: $black;
+            fill: $black;
+
+            &::after {
+                background-color: $blue;
+                animation: glitch 0.3s infinite alternate;
+            }
+        }
+
+        &:active {
+            &::after {
+                background-color: darken($blue, 10%);
+            }
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        color: $black;
+
+        &:hover {
+            animation: none;
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    & svg {
+        height: 1.5rem;
+    }
+}
+
+/*#endregion*/
