@@ -134,6 +134,7 @@ footer {
   padding: 1rem 1rem;
   height: 5rem;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 4%, rgba(2, 9, 26, 0.01) 100%);
+  overflow-x: clip;
 }
 .header a {
   text-transform: uppercase;
@@ -145,6 +146,7 @@ footer {
 .header nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .header__burger {
   position: relative;
@@ -203,14 +205,13 @@ footer {
 .header__menu {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   z-index: 1;
-  isolation: isolate;
   align-items: center;
   margin: 0.8em 0;
-  top: 12rem;
-  right: -110%;
-  width: 12rem;
+  top: 2rem;
+  right: -20rem;
+  width: 18rem;
   -webkit-clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
           clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
   background: #02091a;
@@ -260,6 +261,7 @@ footer {
     display: none;
   }
   .header__menu {
+    position: relative;
     flex-direction: row;
     width: unset;
     background-color: unset;

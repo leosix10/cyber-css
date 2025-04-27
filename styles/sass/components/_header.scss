@@ -10,6 +10,7 @@
     padding: 1rem 1rem;
     height: 5rem;
     background: linear-gradient(180deg,rgba(0, 0, 0, 0.8) 4%, rgba(2, 9, 26, 0.01) 100%);
+    overflow-x: clip;
 
     a {
         text-transform: uppercase;
@@ -23,6 +24,7 @@
     nav {
         display: flex;
         align-items: center;
+        position: relative;
     }
 
     &__burger {
@@ -90,14 +92,13 @@
     &__menu {
         display: flex;
         flex-direction: column;
-        position: relative;
+        position: absolute;
         z-index: 1;
-        isolation: isolate;
         align-items: center;
         margin: 0.8em 0;
-        top: 12rem;
-        right: -110%;
-        width: 12rem;
+        top: 2rem;
+        right: -20rem;
+        width: 18rem;
         clip-path: $cyberpunk-shape;
         background: $black;
         transition: all 0.2s ease 0.1s;
@@ -161,11 +162,12 @@
     .header{
         padding: 1rem 2rem;
 
-        &__burger, &__toggle{
+        &__burger, &__toggle {
           display: none;
         }
 
-        &__menu{
+        &__menu {
+          position: relative;
           flex-direction: row;
           width: unset;
           background-color: unset;
@@ -173,11 +175,11 @@
           top: 0;
           right: 0;
 
-          li{
+          li {
             width: unset;
             border-top: none;
 
-            a{
+            a {
               padding: 1rem 1.5rem;
             }
           }
