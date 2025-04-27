@@ -13,7 +13,7 @@
     &__image {
         clip-path: $cyberpunk-shape;
         width: 100%;
-        height: 30vh;
+        height: 25vh;
         background: $blue;
 
         img {
@@ -49,6 +49,10 @@
     .gallery {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
+
+        &__image {
+            height: 30vh;
+        }
     }
 }
 

@@ -68,23 +68,23 @@
         z-index: 3;
         cursor: pointer;
         opacity: 0;
-        &:checked ~ .hamburger {
+        &:checked ~ .header__burger {
           background: transparent;
         }
 
-        &:checked ~ .hamburger::before {
+        &:checked ~ .header__burger::before {
           top: 0;
           transform: rotate(-45deg);
           width: 30px;
         }
 
-        &:checked ~ .hamburger::after {
+        &:checked ~ .header__burger::after {
           top: 0;
           transform: rotate(45deg);
           width: 30px;
         }
 
-        &:checked ~ ul {
+        &:checked ~ .header__menu {
           right: 0;
         }
     }
