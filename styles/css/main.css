@@ -488,12 +488,42 @@ footer {
 .card {
   min-width: 16rem;
   max-width: 26rem;
-  -webkit-clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
-          clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
-  background-color: #136377;
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  position: relative;
+  z-index: 0;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: -0.5rem;
+  bottom: 0;
+  background: #00ffd2;
+  z-index: -2;
+  -webkit-clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
+          clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
+  transition: all 0.3s;
+}
+.card:hover::before {
+  top: -0.5rem;
+  left: 1rem;
+  right: -1rem;
+  bottom: 0.5rem;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #136377;
+  z-index: -1;
+  -webkit-clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
+          clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
 }
 .card__image img {
   -webkit-clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% 1rem);
