@@ -12,16 +12,16 @@ Le style Cyberpunk s’inspire d’un futur dystopique, souvent urbain, technolo
 
 Les boutons ont été décliné en 4 styles :
 
-- Avec icone
-- Sans icone 
+- Avec icône
+- Sans icône 
 - Avec contour
 - Bouton désactivé
 
-Des états ont été appliqué à ces éléments. Au survol, un effet glitch apparait, qui correspond au style Cyberpunk. Lorsqu'on clique, le bouton s'assombrit. Ces états ne s'appliquent pas au bouton désactivé.
+Des états ont été appliqué à ces éléments. Au survol, un effet glitch apparaît, qui correspond au style Cyberpunk. Lorsqu'on clique, le bouton s'assombrit. Ces états ne s'appliquent pas au bouton désactivé.
 
 ### 2. Cartes
 
-Ce composant contient une image, un titre, un paragraphe et un bouton CTA, le tout dans un style Cyberpunk avec ses angles coupés. Il existe une variante sans image.
+Ce composant contient une image, un titre, un paragraphe et un bouton CTA, le tout dans un style Cyberpunk avec ses angles coupés. Au survol, la bordure cyan se déplace. Il existe une variante sans image.
 
 ### 3. Galerie
 
@@ -62,7 +62,7 @@ Pour rendre l'expérience utilisateur plus immersive, plusieurs formulaires ont 
  ┃ ┃ ┣ 📂 layout (mise en page)
  ┃ ┃ ┃ ┗ _body.scss
  ┃ ┃ ┗ main.scss (regroupement des propriétés utilisées)
- ┃ ┗ 📂 css (feuille de style compliée)
+ ┃ ┗ 📂 css (feuille de style compilée)
  ┃   ┣ main.css
  ┃   ┗ main.min.css
  ┣ 🗎 index.html
@@ -82,7 +82,7 @@ Vérifie d'avoir bien compilé le fichier `main.scss` (situé dans `styles/sass/
 <link rel="stylesheet" href="styles/css/main.css">
 ```
 2. **Structure HTML :**
-Chaque composant a été conçu pour être facilement réutilisable. Tu peux copier-coller les classes HTML de chaque composant (boutons, formulaires, cartes, header, digicode) directement dans ton projet. Tu peux retrouver la liste de toutes les classes utilisées en bas du fichier README.
+Chaque composant a été conçu pour être facilement réutilisable. Tu peux copier-coller les classes HTML de chaque composant (boutons, formulaires, cartes, header, galerie) directement dans ton projet. Tu peux retrouver la liste de toutes les classes utilisées en bas du fichier README.
 
 3. **Images**
 Les images nécessaires se trouvent dans le dossier images/. Pense à bien conserver la structure des fichiers ou à adapter les chemins si tu modifies l’arborescence.
