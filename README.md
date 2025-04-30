@@ -25,7 +25,7 @@ Ce composant contient une image, un titre, un paragraphe et un bouton CTA, le to
 
 ### 3. Galerie
 
-Cette galerie contient des images, accompagné de leurs légendes au survol de l'image. Ce composant s'intègre bien visuellement grâce aux bordures biseautés. 
+Cette galerie contient des images accompagnées de légendes visibles au survol. Ce composant s'intègre bien visuellement grâce aux bordures biseautés. 
 
 ### 4. Header
 
